@@ -9,5 +9,4 @@ models.py ---- Define models
 scores.py     ---- For calculating evaluation metrics   
 
 Requirements:   
-Python 3.5.2
-Keras 2.2.4 + Numpy
+Python 3.5.2, Keras 2.2.4, Numpy
