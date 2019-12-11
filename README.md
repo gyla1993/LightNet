@@ -10,3 +10,13 @@ scores.py     ---- For calculating evaluation metrics
 
 Requirements:   
 Python 3.5.2, Keras 2.2.4, Numpy
+
+Reference:    
+@inproceedings{geng2019lightnet,
+  title={LightNet: A Dual Spatiotemporal Encoder Network Model for Lightning Prediction},
+  author={Geng, Yangli-ao and Li, Qingyong and Lin, Tianyang and Jiang, Lei and Xu, Liangtao and Zheng, Dong and Yao, Wen and Lyu, Weitao and Zhang, Yijun},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={2439--2447},
+  year={2019},
+  organization={ACM}
+}
