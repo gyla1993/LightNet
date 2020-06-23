@@ -1,7 +1,7 @@
 # LightNet
-[LightNet: A Dual Spatiotemporal Encoder Network Model for Lightning Prediction](https://dl.acm.org/doi/10.1145/3292500.3330717) In KDD 2019
+[LightNet: A Dual Spatiotemporal Encoder Network Model for Lightning Prediction](https://dl.acm.org/doi/10.1145/3292500.3330717) In *KDD* 2019
 
-This is a Keras implementation of Light, a dual-source spatiotemporal neural network for grid-level lightning forecast.
+This is a Keras implementation of LightNet.
 
 core.py       ---- For training and inference    
 generator.py  ---- Data loader    
