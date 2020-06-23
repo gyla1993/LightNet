@@ -11,6 +11,16 @@ scores.py     ---- For calculating evaluation metrics
 Requirements:   
 Python 3.5.2, Keras 2.2.4, Numpy
 
+
+### Warning
+You may need to remove the following code 
+```python
+    inputs, initial_state, constants = _standardize_args(
+         inputs, initial_state, constants, self._num_constants)
+```
+from "keras/layers/convolutional_recurrent.py", due to a bug in ConvLSTM2D of keras. cf. https://github.com/keras-team/keras/issues/9761
+
+
 # Reference  
 ```
 @inproceedings{geng2019lightnet,
