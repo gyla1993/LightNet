@@ -13,7 +13,7 @@ Python 3.5.2, Keras 2.2.4, Numpy, Tensorflow 1.6.0
 
 
 ### Warning
-Our code seems not to be sensitive to the version of python (3.5, 3.6) or Tensorflow (1.6.0~1.13.1), but is very dependent on version of Keras (2.2.4). This is because we need to change the source code of Keras to fix a bug in its ConvLSTM2D (cf. https://github.com/keras-team/keras/issues/9761). See below. 
+Our code seems not to be sensitive to the version of python (3.5, 3.6) or Tensorflow (1.6.0~1.13.1), but is very dependent on the version of Keras (2.2.4). This is because we need to change the source code of Keras to fix a bug in its ConvLSTM2D (cf. https://github.com/keras-team/keras/issues/9761). See below. 
 
 You may need to remove the following code 
 ```python
