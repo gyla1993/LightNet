@@ -9,16 +9,20 @@ models.py ---- Define models
 scores.py     ---- For calculating evaluation metrics   
 
 Requirements:   
-Python 3.5.2, Keras 2.2.4, Numpy
+Python 3.5.2, Keras 2.2.4, Numpy, Tensorflow 1.6.0
 
 
 ### Warning
+Our code seems not to be sensitive to the version of python (3.5, 3.6) or Tensorflow (1.6.0~1.13.1), but is very dependent on version of Keras (2.2.4). This is because we need to change the source code of Keras to fix a bug in its ConvLSTM2D (cf. https://github.com/keras-team/keras/issues/9761). See below. 
+
 You may need to remove the following code 
 ```python
     inputs, initial_state, constants = _standardize_args(
          inputs, initial_state, constants, self._num_constants)
 ```
 from "keras/layers/convolutional_recurrent.py", due to a bug in ConvLSTM2D of keras. cf. https://github.com/keras-team/keras/issues/9761
+
+The deep learning (DL) framework we used is somewhat out-of-date. As a personal suggestion, you can try to implement your model by PyTorch or any other new DL framework, if you plan to conduct long-term research in this area.
 
 
 # Reference  
