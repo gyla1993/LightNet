@@ -22,6 +22,22 @@ You may need to remove the following code
 ```
 from "keras/layers/convolutional_recurrent.py", due to a bug in ConvLSTM2D of keras. cf. https://github.com/keras-team/keras/issues/9761
 
+
+If you use Anaconda, the following commands will help you create a running environment.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+conda create -n py36_keras224 python=3.6
+
+conda activate py36_keras224 
+
+conda install tensorflow-gpu==1.13.1
+
+pip install keras==2.2.4
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Then fix the the above-mentioned keras bug.
+
+
 The deep learning (DL) framework we used is somewhat out-of-date. As a personal suggestion, you can try to implement your model by PyTorch or any other new DL framework, if you plan to conduct long-term research in this area.
 
 
